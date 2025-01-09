@@ -214,6 +214,7 @@ Scope (\_SB)
 			}
 		}
 
+#if CONFIG(BOARD_GOOGLE_BASEBOARD_DRALLION)
 		Device (TC02)
 		{
 			Name (_ADR, 1)  // _ADR: Address
@@ -227,5 +228,6 @@ Scope (\_SB)
 				Return (GPLD (1, 2))
 			}
 		}
+#endif
 	}
 }
